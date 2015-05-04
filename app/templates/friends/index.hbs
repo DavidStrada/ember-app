@@ -1,0 +1,10 @@
+<h1>Friends Index</h1>
+
+<ul>
+	{{#each friend in model}}
+		<li>
+			{{ link-to friend.fullName 'friends.show' friend }}
+				
+		</li>
+	{{/each}}
+</ul>
